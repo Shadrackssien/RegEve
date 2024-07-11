@@ -4,6 +4,4 @@ from config import Config
 app = Flask(__name__)
 app.config.from_object(Config)
 
-@app.route('/')
-def home():
-    return 'Hello, World! Asshole motherfucker'
+from app.routes.root import *
