@@ -1,5 +1,6 @@
 from app import app
+from flask import render_template
 
 @app.route('/')
 def home():
-    return 'Boss Shady'
+    return render_template('root/index.html')
